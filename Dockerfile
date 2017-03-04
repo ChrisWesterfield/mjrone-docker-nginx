@@ -16,7 +16,7 @@ ADD server.crt /etc/nginx/server.crt
 ADD dhparam.pem /etc/nginx/dhparam.pem
 
 RUN mkdir /etc/nginx/conf.d
-RUN echo "upstream php-upstream { server php:9000; }" > /etc/nginx/conf.d/upstream.conf
+#RUN echo "upstream php-upstream { server php:9000; }" > /etc/nginx/conf.d/upstream.conf
 
 RUN usermod -u 1000 www-data
 
