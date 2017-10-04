@@ -107,7 +107,6 @@ RUN apt-get update && \
     rm /etc/nginx/nginx.conf
 
 ADD nginx.conf /etc/nginx/
-USER www-data
 CMD ["nginx"]
 EXPOSE 80
 EXPOSE 443
